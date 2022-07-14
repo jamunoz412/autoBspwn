@@ -1,0 +1,13 @@
+9
+
+https://noviello.it/
+https://noviello.it/sw.js
+true
+{c9526b16-cce2-4937-869d-c6945ba6d245}
+0
+1657733159411515
+1657733159416087
+1657733158333343
+0
+true
+#
