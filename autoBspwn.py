@@ -54,6 +54,20 @@ def programas_previos():
 	blue()
 	print("\n  [1] Instalados programas previos.\n")
 
+# Instalamos BSPWN y SXHKD
+def install_bspwn():
+	
+	os.system('sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev')
+	os.system("cd ~/Descargas")
+	os.system("git clone https://github.com/baskerville/bspwm.git")
+	os.system("git clone https://github.com/baskerville/sxhkd.git")
+	os.system("cd bspwm/")
+	os.system("make")
+	os.system("sudo make install")
+	os.system("cd ../sxhkd/")
+	os.system("make")
+	os.system("sudo make install")
+	os.system('sudo apt install bspwn')
 
 def menu():
 
@@ -64,6 +78,7 @@ def menu():
 	print("\n\n Iniciando instalación\n")
 
 	programas_previos()
+	install_bspwn()
 
 	print("\n Instalación finalizada\n")
 
